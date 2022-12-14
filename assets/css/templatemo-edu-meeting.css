@@ -1457,13 +1457,15 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/bg-gray.webp);
+  background-image: url(../images/room\ set\ 5.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 110px;
+  padding-top: 250px;
+  background-attachment: fixed;
+  /* padding-bottom: 20vh; */
   text-align: center;
+  height: 100vh;
 }
 
 section.heading-page h6 {
@@ -1493,7 +1495,8 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(../images/bg-gray.webp);
+  /* background-image: url(../images/bg-gray.webp); */
+  background-color: #1e2224;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1568,22 +1571,22 @@ section.meetings-page .pagination ul li a:hover {
   color: #fff;
 }
 
-.meeting-single-item .thumb {
+.product-item .thumb {
   position: relative;
 }
 
-.meeting-single-item .thumb img {
+.product-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.meeting-single-item .thumb .price {
+.product-item .thumb .price {
   position: absolute;
   left: 20px;
   top: 20px;
 }
 
-.meeting-single-item .thumb .price span {
+.product-item .thumb .price span {
   font-size: 16px;
   color: #1f272b;
   font-weight: 600;
@@ -1592,14 +1595,15 @@ section.meetings-page .pagination ul li a:hover {
   border-radius: 10px;
 }
 
-.meeting-single-item .down-content {
-  background-color: #fff;
+.product-item .down-content {
+  background-color: rgb(255, 255, 255);
   padding: 40px;
+  margin-bottom: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.meeting-single-item .thumb .date {
+.product-item .thumb .date {
   position: absolute;
   background-color: rgba(250,250,250,0.9);
   width: 80px;
@@ -1611,21 +1615,21 @@ section.meetings-page .pagination ul li a:hover {
   top: 20px;
 }
 
-.meeting-single-item .thumb .date h6 {
+.product-item .thumb .date h6 {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   color: #a12c2f;
 }
 
-.meeting-single-item .thumb .date span {
+.product-item .thumb .date span {
   display: block;
   color: #1f272b;
   font-size: 22px;
   margin-top: 7px;
 }
 
-.meeting-single-item .down-content h4 {
+.product-item .down-content h4 {
   font-size: 22px;
   color: #1f272b;
   font-weight: 600;
@@ -1633,7 +1637,7 @@ section.meetings-page .pagination ul li a:hover {
   margin-bottom: 15px;
 }
 
-.meeting-single-item .down-content h5 {
+.product-item .down-content h5 {
   font-size: 18px;
   color: #1f272b;
   font-weight: 700;
@@ -1641,12 +1645,12 @@ section.meetings-page .pagination ul li a:hover {
   margin-bottom: 15px;
 }
 
-.meeting-single-item .down-content p {
+.product-item .down-content p {
   color: #1f272b;
   font-size: 14px;
 }
 
-.meeting-single-item .down-content p.description {
+.product-item .down-content p.description {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #eee;
@@ -1655,29 +1659,29 @@ section.meetings-page .pagination ul li a:hover {
   border-bottom: 1px solid #eee;
 }
 
-.meeting-single-item .down-content .share {
+.product-item .down-content .share {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #eee;
 }
 
-.meeting-single-item .down-content .share h5 {
+.product-item .down-content .share h5 {
   float: left;
   margin-right: 10px;
   margin-bottom: 0px;
 }
 
-.meeting-single-item .down-content .share ul li {
+.product-item .down-content .share ul li {
   display: inline;
 }
 
-.meeting-single-item .down-content .share ul li a {
+.product-item .down-content .share ul li a {
   font-size: 14px;
   color: #1f272b;
   transition: all .3s;
 }
 
-.meeting-single-item .down-content .share ul li a:hover {
+.product-item .down-content .share ul li a:hover {
   color: #f5a425;
 }
 
