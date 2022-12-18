@@ -27,15 +27,15 @@ window.addEventListener("scroll", function(){
     if(currentScrollPos > 1100){
         categories.classList.add("animate__animated", "animate__fadeInLeft")
         categories.style.setProperty("--animate-duration", "2s");
-        categories.style.opacity = "1";
+        // categories.style.opacity = "1";
 
         textContent.classList.add("animate__animated", "animate__fadeInRight")
         textContent.style.setProperty("--animate-duration", "2s");
-        textContent.style.opacity = "1";
+        // textContent.style.opacity = "1";
 
-        whoAreWe.classList.add("animate__animated", "animate__fadeInDownBig")
-        whoAreWe.style.setProperty("--animate-duration", "1.5s");
-        whoAreWe.style.opacity = "1";
+        whoAreWe.classList.add("animate__animated", "animate__fadeInDown")
+        whoAreWe.style.setProperty("--animate-duration", "2s");
+        // whoAreWe.style.opacity = "1";
     }
 
 });
