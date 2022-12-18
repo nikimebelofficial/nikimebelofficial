@@ -36,7 +36,7 @@ https://templatemo.com/tm-569-edu-meeting
 <body>
 
   <!-- Sub Header -->
-  <div class="sub-header">
+  <!-- <div class="sub-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-sm-8">
@@ -54,7 +54,7 @@ https://templatemo.com/tm-569-edu-meeting
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- FLOATING BUTTON -->
@@ -120,9 +120,12 @@ https://templatemo.com/tm-569-edu-meeting
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
-      <video autoplay muted loop id="bg-video">
+      <!-- <video autoplay muted loop id="bg-video">
           <source src="assets/images/bg.mp4" type="video/mp4" />
-      </video>
+      </video> -->
+      <div class="bg-banner">
+        <img src="assets/images/room set 1.webp" alt="">
+      </div>
 
 
       <div class="video-overlay header-text">
@@ -140,61 +143,67 @@ https://templatemo.com/tm-569-edu-meeting
           </div>
       </div>
 
-      <div class="gradient-dark">
+      <div class="gradient-white">
       </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
   <section class="services">
-      <div class="inner">
-          <div class="slider">
-              <div class="swiper">
-                  <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                          <img src="assets/images/bed 1.webp">
-                          <div class="bg-gray">
-                            <h4>Beds</h4>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/images/table 7.webp">
-                          <div class="bg-gray">
-                            <h4>Tables</h4>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/images/buffet 2.webp">
-                          <div class="bg-gray">
-                            <h4>Buffets</h4>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/images/cabinet 2.webp">
-                          <div class="bg-gray">
-                            <h4>Cabinets</h4>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/images/chair 1.webp">
-                          <div class="bg-gray">
-                            <h4>Chairs</h4>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/images/desk 2.webp">
+    <div class="title">
+      <h2>Our Products</h2>
+    </div>
+    <div class="inner">
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/slider/bed.webp">
                         <div class="bg-gray">
-                          <h4>Desks</h4>
+                          <h4>Beds</h4>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/images/bed 3.webp">
+                        <img src="assets/images/slider/table.webp">
+                        <div class="bg-gray">
+                          <h4>Tables</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slider/buffet.webp">
+                        <div class="bg-gray">
+                          <h4>Buffets</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slider/cabinet.webp">
+                        <div class="bg-gray">
+                          <h4>Cabinets</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slider/chair.webp">
+                        <div class="bg-gray">
+                          <h4>Chairs</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/slider/desk.webp">
                       <div class="bg-gray">
-                        <h4>Mirror</h4>
+                        <h4>Desks</h4>
                       </div>
                   </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/slider/mirror.webp">
+                    <div class="bg-gray">
+                      <h4>Mirror</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-catalogue main-button-yellow">
+      <a href="products.html">Download Catalogue</a>
+    </div>
   </section>
 
   <section class="who-we-are" id="meetings">
@@ -207,13 +216,13 @@ https://templatemo.com/tm-569-edu-meeting
         </div>
         <div class="col-lg-4">
           <div class="categories">
-            <h4>What do you need?</h4>
+            <h4>Anything you need</h4>
             <ul>
               <li><a href="#">furniture from rattan or wood ?</a></li>
-              <li><a href="#">or metal furniture (Aluminuim, iron, etc.) ?</a></li>
+              <li><a href="#">or metal furniture<br>(Aluminuim, iron, etc.) ?</a></li>
               <li><a href="#">or you only need furniture raw matterials ?</a></li>
             </ul>
-            <div class="main-button-red">
+            <div class="main-button-yellow">
               <a href="products.html">Consult with us</a>
             </div>
           </div>
@@ -812,16 +821,22 @@ https://templatemo.com/tm-569-edu-meeting
         var slideWidth;
 
         var mySwiper = new Swiper('.slider .swiper', {
-            speed: 8000,
-            slidesPerView: 3,
-            loop: true,
-            freeMode: true,
-            freeModeMomentum: false,
-            centeredSlides: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            }
+          autoplay: {
+            enabled: true,
+            delay: 1,
+          },          
+          spaceBetween: 0,
+          slidesPerView: 'auto',
+          loop: true,
+          speed: 4000
+
+            // speed: 8000,
+            // slidesPerView: auto,
+            // loop: true,
+            // freeMode: true,
+            // freeModeMomentum: false,
+            // centeredSlides: true,
+            // autoplay: true
         })
     </script>
 </body>

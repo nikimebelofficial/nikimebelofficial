@@ -24,7 +24,7 @@ window.addEventListener("scroll", function(){
     //     slider.style.setProperty("--animate-duration", "1s");
     // }
 
-    if(currentScrollPos > 1100){
+    if(currentScrollPos > 1800){
         categories.classList.add("animate__animated", "animate__fadeInLeft")
         categories.style.setProperty("--animate-duration", "2s");
         // categories.style.opacity = "1";
