@@ -803,8 +803,6 @@ services
   color: rgb(255, 255, 255);
 }
 
-
-
 /*
 ---------------------------------------------
 upcoming meetings
@@ -824,6 +822,7 @@ section.who-we-are {
 
 section.who-we-are .section-heading {
   text-align: center;
+  opacity: 0;
 }
 
 section.who-we-are .categories {
@@ -831,6 +830,7 @@ section.who-we-are .categories {
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
+  opacity: 0;
 }
 
 section.who-we-are .categories h4 {
@@ -871,6 +871,7 @@ section.who-we-are .categories .main-button-red a {
 
 section.who-we-are .text-content p{
   color: white;
+  opacity: 0;
 }
 
 /* GALLERY */
