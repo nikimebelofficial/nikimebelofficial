@@ -1,4 +1,7 @@
-const slider = document.querySelector(".services .swiper-wrapper");
+const titleSlider = document.querySelector(".services .title");
+const downloadSlider = document.querySelector(".services .button-catalogue");
+
+
 
 const caption = document.querySelector(".main-banner .caption");
 caption.classList.add("animate__animated", "animate__fadeInLeft");
@@ -16,15 +19,20 @@ const whoAreWe = document.querySelector(".who-we-are .section-heading");
 
 
 
+
 // SCROLL DOWN
 window.addEventListener("scroll", function(){
     let currentScrollPos = this.window.pageYOffset;
-    // if(currentScrollPos > 300){
-    //     slider.classList.add("animate__animated", "animate__fadeInUp");
-    //     slider.style.setProperty("--animate-duration", "1s");
-    // }
+    if(currentScrollPos > 600){
+        titleSlider.classList.add("animate__animated", "animate__fadeInLeft");
+        titleSlider.style.setProperty("--animate-duration", "2s");
 
-    if(currentScrollPos > 1800){
+        downloadSlider.classList.add("animate__animated", "animate__fadeInRight");
+        downloadSlider.style.setProperty("--animate-duration", "2s");
+
+    }
+
+    if(currentScrollPos > 2000){
         categories.classList.add("animate__animated", "animate__fadeInLeft")
         categories.style.setProperty("--animate-duration", "2s");
         // categories.style.opacity = "1";
