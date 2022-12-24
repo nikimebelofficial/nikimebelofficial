@@ -3,9 +3,9 @@ const downloadSlider = document.querySelector(".services .button-catalogue");
 
 
 
-const caption = document.querySelector(".main-banner .caption");
-caption.classList.add("animate__animated", "animate__fadeInLeft");
-caption.style.setProperty("--animate-duration", "2s");
+// const caption = document.querySelector(".main-banner .caption");
+// caption.classList.add("animate__animated", "animate__fadeInLeft");
+// caption.style.setProperty("--animate-duration", "2s");
 
 const navBar = document.querySelector(".main-nav");
 navBar.classList.add("animate__animated", "animate__fadeInDown")
@@ -13,7 +13,7 @@ navBar.style.setProperty("--animate-duration", "2s");
 
 const categories = document.querySelector(".who-we-are .categories");
 
-const textContent = document.querySelector(".who-we-are .text-content p");
+const textContent = document.querySelector(".text-content");
 
 const whoAreWe = document.querySelector(".who-we-are .section-heading");
 
@@ -32,7 +32,7 @@ window.addEventListener("scroll", function(){
 
     }
 
-    if(currentScrollPos > 2000){
+    if(currentScrollPos > 1900){
         categories.classList.add("animate__animated", "animate__fadeInLeft")
         categories.style.setProperty("--animate-duration", "2s");
         // categories.style.opacity = "1";
