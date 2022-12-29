@@ -1,21 +1,26 @@
-const titleSlider = document.querySelector(".services .title");
-const downloadSlider = document.querySelector(".services .button-catalogue");
+$(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    console.log(wScroll);
+});
 
 
+var titleSlider = document.querySelector(".services .title h2");
+var productSlider = document.querySelector(".cssbuttons-io-button");
+var downloadSlider = document.querySelector(".download-button");
 
-// const caption = document.querySelector(".main-banner .caption");
-// caption.classList.add("animate__animated", "animate__fadeInLeft");
-// caption.style.setProperty("--animate-duration", "2s");
+var chairBg = document.querySelector(".chair-bg");
 
-const navBar = document.querySelector(".main-nav");
+var textContent = document.querySelector(".text-content");
+
+var roomBg = document.querySelector(".room-bg")
+
+var caption = document.querySelector(".main-banner .caption");
+caption.classList.add("animate__animated", "animate__fadeInUp");
+caption.style.setProperty("--animate-duration", "2s");
+
+var navBar = document.querySelector(".main-nav");
 navBar.classList.add("animate__animated", "animate__fadeInDown")
 navBar.style.setProperty("--animate-duration", "2s");
-
-const categories = document.querySelector(".who-we-are .categories");
-
-const textContent = document.querySelector(".text-content");
-
-const whoAreWe = document.querySelector(".who-we-are .section-heading");
 
 
 
@@ -23,27 +28,43 @@ const whoAreWe = document.querySelector(".who-we-are .section-heading");
 // SCROLL DOWN
 window.addEventListener("scroll", function(){
     let currentScrollPos = this.window.pageYOffset;
-    if(currentScrollPos > 600){
-        titleSlider.classList.add("animate__animated", "animate__fadeInLeft");
-        titleSlider.style.setProperty("--animate-duration", "2s");
+    if(currentScrollPos > 800){
+        titleSlider.classList.add("animate__animated", "animate__fadeInUpBig");
+        titleSlider.style.setProperty("--animate-duration", "1s");
+        titleSlider.style.opacity = "1";
+    }
 
-        downloadSlider.classList.add("animate__animated", "animate__fadeInRight");
-        downloadSlider.style.setProperty("--animate-duration", "2s");
+    if(currentScrollPos > 1300){
+        productSlider.classList.add("animate__animated", "animate__fadeInUpBig");
+        productSlider.style.setProperty("--animate-duration", "1s");
+        productSlider.style.opacity = "1";
+    }
+
+    if(currentScrollPos > 1500){
+        downloadSlider.classList.add("animate__animated", "animate__fadeInUpBig");
+        downloadSlider.style.setProperty("--animate-duration", "1s");
+        downloadSlider.style.opacity = "1";
+    }
+    if(currentScrollPos > 2100){
+        chairBg.classList.add("animate__animated", "animate__fadeInUpBig");
+        chairBg.style.setProperty("--animate-duration", "1s");
+        chairBg.style.opacity = "1";
+    }
+
+
+    if(currentScrollPos > 3200){
+
+        textContent.classList.add("animate__animated", "animate__fadeInUpBig")
+        textContent.style.setProperty("--animate-duration", "1s");
+        textContent.style.opacity = "1";
+
+    }
+    if(currentScrollPos > 3800){
+        roomBg.classList.add("animate__animated", "animate__fadeInUpBig")
+        roomBg.style.setProperty("--animate-duration", "1s");
+        roomBg.style.opacity = "1";
 
     }
 
-    if(currentScrollPos > 1900){
-        categories.classList.add("animate__animated", "animate__fadeInLeft")
-        categories.style.setProperty("--animate-duration", "2s");
-        // categories.style.opacity = "1";
-
-        textContent.classList.add("animate__animated", "animate__fadeInRight")
-        textContent.style.setProperty("--animate-duration", "2s");
-        // textContent.style.opacity = "1";
-
-        whoAreWe.classList.add("animate__animated", "animate__fadeInDown")
-        whoAreWe.style.setProperty("--animate-duration", "2s");
-        // whoAreWe.style.opacity = "1";
-    }
 
 });

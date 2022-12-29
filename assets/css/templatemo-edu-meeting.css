@@ -161,6 +161,13 @@ body {
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
+
+  .main-banner .caption {
+    top: 35vh !important;
+    margin: auto;
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .main-button-yellow a {
@@ -257,7 +264,7 @@ header
 }
 
 .header-area nav ul{
-  height: 80px;
+  min-height: 80px;
   margin: auto;
 }
 
@@ -273,6 +280,11 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+.header-area .main-nav .name {
+  display: none;
+}
+
 
 .background-header .main-nav .logo {
   line-height: 75px;
@@ -541,8 +553,11 @@ header
 }
 
 @media (max-width: 767px) {
+  .header-area .main-nav .name {
+    display: contents;
+  }
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: #f5a425;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -584,8 +599,11 @@ header
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
+  .header-area .main-nav .nav li:nth-child(4) {
+    display: none;
+  }
   .header-area.header-sticky .nav {
-    margin-top: 100px !important;
+    margin-top: 70px !important;
   }
   .header-area .main-nav .nav li {
     width: 100%;
@@ -637,12 +655,40 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+  .main-banner .caption {
+    top: 35vh !important;
+    margin: auto;
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 767px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
+}
+
+@media (max-width: 560px) {
+  .main-banner .caption {
+    margin: auto;
+    width: 100%;
+    padding-left: 0;
+  }
+  .main-banner .caption h6 {
+    display: none;
+  }
+  .main-banner .caption h2 {
+    text-align: center;
+  }
+  .text-content{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+
+
+
 }
 
 
@@ -666,13 +712,11 @@ banner
 
 .main-banner .caption {
   position: relative;
-  text-align: start;
-  /* background-color: #2b2b2ba8; */
+  text-align: center;
   padding: 20px;
-  width: 45vw;
+  margin: auto;
+  width: 100%;
   top: 30vh;
-  left: 10vw;
-  border-radius: 30px;
 }
 
 
@@ -683,15 +727,18 @@ banner
   font-weight: 800;
   color: #f4ebd0;
   letter-spacing: 1px;
-  text-shadow: 0px 0px 20px #000000;
+  text-shadow: 5px 5px 10px #000000;
 
 }
 
 .main-banner .caption h6 {
   color: #f4ebd0;
   font-size: 15px;
-  width: 100%;
-  text-shadow: 0px 0px 30px #000000;
+  display: inline;
+  background-color: #122620;
+  /* padding: px; */
+  /* tab-size: 2; */
+  text-shadow: 5px 5px 5px #000000;
 
 }
 
@@ -720,7 +767,7 @@ section.services {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50vh;
+  padding-bottom: 30vh;
   padding-top: 50vh;
   background-color: #f4ebd0;
 }
@@ -728,7 +775,7 @@ section.services {
 .services .title h2 {
   text-align: center;
   margin-bottom: 5vh;
-  /* opacity: 0; */
+  opacity: 0;
   font-weight: 200;
 }
 
@@ -767,6 +814,7 @@ section.services {
   z-index: 1;
   font-family: 'Poppins', sans-serif !important;
   background-color: #122620;
+  opacity: 0;
  }
  
  .download-button .docs {
@@ -841,6 +889,7 @@ section.services {
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
+  opacity: 0;
  }
  
  .cssbuttons-io-button .icon {
@@ -939,6 +988,11 @@ section.services {
   background: #f4ebd0;
 }
 
+.chair-bg{
+  max-width: 700px;
+  margin-top: 20vh;
+  opacity: 0;
+}
 
 /*
 ---------------------------------------------
@@ -953,55 +1007,28 @@ section.who-we-are {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50vh;
+  padding-bottom: 70vh;
   color: #122620;
 
-}
-
-section.who-we-are .section-heading {
-  text-align: center;
-  /* opacity: 0; */
-  z-index: 2;
-}
-
-section.who-we-are .categories {
-  background-color: #f4ebd0;
-  border-radius: 20px;
-  padding: 40px;
-  margin-right: 45px;
-  box-shadow: 0px 0px 20px #888888;  
-  /* opacity: 0; */
-}
-
-section.who-we-are .categories h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #122620;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #f4ebd0;
-}
-
-section.who-we-are .categories ul li {
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-section.who-we-are .categories ul li a {
-  font-size: 15px;
-  color: #122620;
-  font-weight: 500;
-  transition: all .3s;
-}
-
-section.who-we-are .categories ul li a:hover {
-  color: #a12c2f;
 }
 
 .text-content{
-  color: #122620;
-  /* opacity: 0; */
+  position: relative;
+  text-align: justify;
+  opacity: 0;
+
 }
+.text-content h2{
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.room-bg{
+  margin-top: 20vh;
+  opacity: 0;
+}
+
 
 /* GALLERY */
 .gallery {
@@ -1732,15 +1759,15 @@ section.meetings-page .pagination ul li a:hover {
 
 @media (max-width: 992px) {
 	.templatemo-item-col {
-		width: 45%;
+		width: 70%;
 	}
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 	.templatemo-item-col {
 		width: 100%;
 	}
-}
+} */
 
 /* SCROLL DOWN */
 .scrolldown {
@@ -2030,11 +2057,6 @@ responsive
 
   section.who-we-are {
     padding-top: 400px;
-  }
-
-  section.who-we-are .categories {
-    margin-right: 0px;
-    margin-bottom: 30px;
   }
 
   .accordions {
