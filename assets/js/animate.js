@@ -29,39 +29,38 @@ navBar.style.setProperty("--animate-duration", "2s");
 window.addEventListener("scroll", function(){
     let currentScrollPos = this.window.pageYOffset;
     if(currentScrollPos > 800){
-        titleSlider.classList.add("animate__animated", "animate__fadeInUpBig");
-        titleSlider.style.setProperty("--animate-duration", "1s");
+        titleSlider.classList.add("animate__animated", "animate__fadeInUp");
+        titleSlider.style.setProperty("--animate-duration", "3s");
         titleSlider.style.opacity = "1";
     }
 
     if(currentScrollPos > 1300){
-        productSlider.classList.add("animate__animated", "animate__fadeInUpBig");
-        productSlider.style.setProperty("--animate-duration", "1s");
+        productSlider.classList.add("animate__animated", "animate__fadeInUp");
+        productSlider.style.setProperty("--animate-duration", "3s");
         productSlider.style.opacity = "1";
     }
 
-    if(currentScrollPos > 1500){
-        downloadSlider.classList.add("animate__animated", "animate__fadeInUpBig");
-        downloadSlider.style.setProperty("--animate-duration", "1s");
+    if(currentScrollPos > 1700){
+        downloadSlider.classList.add("animate__animated", "animate__fadeInUp");
+        downloadSlider.style.setProperty("--animate-duration", "3s");
         downloadSlider.style.opacity = "1";
     }
     if(currentScrollPos > 2100){
-        chairBg.classList.add("animate__animated", "animate__fadeInUpBig");
-        chairBg.style.setProperty("--animate-duration", "1s");
+        chairBg.classList.add("animate__animated", "animate__fadeInLeft");
+        chairBg.style.setProperty("--animate-duration", "3s");
         chairBg.style.opacity = "1";
     }
 
+    if(currentScrollPos > 3000){
 
-    if(currentScrollPos > 3200){
-
-        textContent.classList.add("animate__animated", "animate__fadeInUpBig")
-        textContent.style.setProperty("--animate-duration", "1s");
+        textContent.classList.add("animate__animated", "animate__fadeInRight")
+        textContent.style.setProperty("--animate-duration", "3s");
         textContent.style.opacity = "1";
 
     }
-    if(currentScrollPos > 3800){
-        roomBg.classList.add("animate__animated", "animate__fadeInUpBig")
-        roomBg.style.setProperty("--animate-duration", "1s");
+    if(currentScrollPos > 3600){
+        roomBg.classList.add("animate__animated", "animate__fadeInLeft")
+        roomBg.style.setProperty("--animate-duration", "3s");
         roomBg.style.opacity = "1";
 
     }
