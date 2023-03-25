@@ -270,9 +270,19 @@ header
   margin: auto;
 }
 
+.header-area .main-nav .name {
+  display: none;
+  color: #d6ad60;
+  font-size: 30px;
+  position: ab;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .header-area .main-nav .logo {
   color: #d6ad60;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -281,10 +291,6 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.header-area .main-nav .name {
-  display: none;
 }
 
 
@@ -551,9 +557,7 @@ header
 }
 
 @media (max-width: 767px) {
-  .header-area .main-nav .name {
-    display: contents;
-  }
+
   .header-area .main-nav .logo {
     color: #f5a425;
   }
@@ -597,7 +601,11 @@ header
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
-  .header-area .main-nav .nav li:nth-child(4) {
+  .header-area .main-nav .nav-index li:nth-child(4) {
+    display: none;
+  }
+
+  .header-area .main-nav .nav-product li:nth-child(1) {
     display: none;
   }
   .header-area.header-sticky .nav {
@@ -1765,22 +1773,16 @@ section.meetings-page .pagination ul li a:hover {
   color: #d6ad60;
 }
 
-/* Meeting item column */
 .templatemo-item-col {
-	width: 31%;
+	width: 33%;
 }
 
 @media (max-width: 992px) {
 	.templatemo-item-col {
-		width: 70%;
+		width: 50%;
 	}
 }
 
-/* @media (max-width: 767px) {
-	.templatemo-item-col {
-		width: 100%;
-	}
-} */
 
 /* SCROLL DOWN */
 .scrolldown {
@@ -2136,5 +2138,39 @@ responsive
 
     flex: 0 100%;
   }
+
+  .header-area .main-nav {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #122620;
+  }
+  .header-area .main-nav .name {
+    display: contents;
+  }
+  
+  .templatemo-item-col {
+		width: 100%;
+	}
+
+  .chair-bg{
+    max-width: 400px;
+    margin-top: 5vh;
+    opacity: 0;
+  }
+
+  section.who-we-are {
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+    color: #122620;
+  
+  }
+
+  section.services {
+    padding-bottom: 5vh;
+   
+  }
+
 
 }
