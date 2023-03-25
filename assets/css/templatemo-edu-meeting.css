@@ -2171,6 +2171,9 @@ responsive
     padding-bottom: 5vh;
    
   }
+  .hidden_phone {
+    display: none;
+  }
 
 
 }
