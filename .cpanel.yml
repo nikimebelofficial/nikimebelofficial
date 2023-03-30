@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nikimebe/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp gallery.html $DEPLOYPATH
+    - /bin/cp rattan-product.html $DEPLOYPATH
+    - /bin/cp raw-product.html $DEPLOYPATH
+    - /bin/cp wood-product.html $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R vendor $DEPLOYPATH
