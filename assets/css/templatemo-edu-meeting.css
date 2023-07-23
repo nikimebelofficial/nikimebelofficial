@@ -192,7 +192,6 @@ body {
 .section-heading h2 {
   line-height: 40px;
   margin-top: 0px;
-  margin-bottom: 50px; 
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(250,250,250,0.15);
   font-size: 22px;
@@ -773,7 +772,7 @@ section.services {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 20vh;
+  padding-bottom: 5vh;
   padding-top: 20vh;
   /* background-color: #f4ebd0; */
   background-color: #f4ebd0;
@@ -1014,7 +1013,7 @@ section.who-we-are {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
   color: #122620;
 
 }
@@ -1031,12 +1030,12 @@ section.who-we-are {
 }
 .text-content h2{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
 }
 
 .room-bg{
-  margin-top: 20vh;
+  margin-top: 5vh;
   opacity: 0;
 }
 
@@ -1201,7 +1200,7 @@ section.popular {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 15px;
   padding-bottom: 130px;
   width: 100%;
   overflow-y: hidden !important;
