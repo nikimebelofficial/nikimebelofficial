@@ -773,8 +773,8 @@ section.services {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 30vh;
-  padding-top: 50vh;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
   /* background-color: #f4ebd0; */
   background-color: #f4ebd0;
 
@@ -806,7 +806,7 @@ section.services {
   display: flex;
   align-items: center;
   justify-content: center;  
-  gap: 15vh;
+  gap: 5vh;
   flex-direction: column;
   font-family: 'Poppins', sans-serif !important;
 }
@@ -1014,7 +1014,7 @@ section.who-we-are {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 70vh;
+  padding-bottom: 30vh;
   color: #122620;
 
 }
