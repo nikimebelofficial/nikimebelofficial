@@ -805,7 +805,7 @@ section.services {
   display: flex;
   align-items: center;
   justify-content: center;  
-  gap: 5vh;
+  gap: 1vh;
   flex-direction: column;
   font-family: 'Poppins', sans-serif !important;
 }
@@ -878,6 +878,29 @@ section.services {
   }
  }
 
+/* waviy */
+.waviy {
+  position: relative;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #122620;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+  0%,
+  80% {
+    transform: rotateY(360deg)
+  }
+}
+
 /* button goto product */
 
 .cssbuttons-io-button {
@@ -896,7 +919,8 @@ section.services {
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
-  opacity: 0;
+  opacity: 1;
+  display: none;
  }
  
  .cssbuttons-io-button .icon {
@@ -997,7 +1021,7 @@ section.services {
 
 .chair-bg{
   max-width: 700px;
-  margin-top: 5vh;
+  margin-top: 10vh;
   opacity: 0;
 }
 
@@ -1223,7 +1247,7 @@ section.popular {
 }
 
 .popular .item .down-content .info ul li i {
-  color: #d6ad60;
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -1255,7 +1279,7 @@ section.popular {
   transition: all .5s;
   width: 7px;
   height: 7px;
-  background-color: #f4ebd0;
+  background-color: #ffffff;
   margin: 0px 5px;
   border-radius: 50%;
   outline: none;
@@ -1286,7 +1310,7 @@ section.popular {
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
-  background-color: #f4ebd0;
+  background-color: #ffffff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1325,7 +1349,7 @@ section.popular {
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
-  background-color: #f4ebd0;
+  background-color: #ffffff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1371,6 +1395,8 @@ section.our-facts h2 {
   color: #f4ebd0;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
+  height: 15vh;
+  width: 15vw;
 }
 
 .percentage .count-digit:after {
@@ -1379,7 +1405,6 @@ section.our-facts h2 {
 }
 
 .count-digit {
-    margin: 5px 0px;
     color: #d6ad60;
     font-weight: 700;
     font-size: 36px;
@@ -1403,6 +1428,7 @@ section.our-facts .video {
   background-position: center center;
   background-size: cover;
   border-radius: 20px;
+  background-color: #2c2e30;
 }
 
 section.our-facts .video img {
