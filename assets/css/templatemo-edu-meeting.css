@@ -773,7 +773,7 @@ section.services {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 5vh;
-  padding-top: 20vh;
+  padding-top: 5vh;
   /* background-color: #f4ebd0; */
   background-color: #f4ebd0;
 
@@ -997,7 +997,7 @@ section.services {
 
 .chair-bg{
   max-width: 700px;
-  margin-top: 20vh;
+  margin-top: 5vh;
   opacity: 0;
 }
 
@@ -1201,7 +1201,7 @@ section.popular {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 15px;
-  padding-bottom: 130px;
+  padding-bottom: 10px;
   width: 100%;
   overflow-y: hidden !important;
 }
