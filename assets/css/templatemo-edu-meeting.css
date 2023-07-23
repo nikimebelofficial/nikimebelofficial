@@ -1080,6 +1080,11 @@ section.who-we-are {
 }
 .gallery .section-heading a {
   cursor: pointer;
+  color: #f4ebd0;
+}
+.gallery .section-heading a :hover {
+  cursor: pointer;
+  color: #004b4b;
 }
 .gallery:hover .gallery__image {
   filter: grayscale(1);
