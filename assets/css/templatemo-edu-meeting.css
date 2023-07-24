@@ -919,7 +919,7 @@ section.services {
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
-  opacity: 1;
+  opacity: 0;
   display: none;
  }
  

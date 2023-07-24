@@ -5,7 +5,6 @@ $(window).scroll(function(){
 
 
 var titleSlider = document.querySelector(".services .title h2");
-var productSlider = document.querySelector(".cssbuttons-io-button");
 var downloadSlider = document.querySelector(".download-button");
 
 var chairBg = document.querySelector(".chair-bg");
@@ -32,12 +31,6 @@ window.addEventListener("scroll", function(){
         titleSlider.classList.add("animate__animated", "animate__fadeInUp");
         titleSlider.style.setProperty("--animate-duration", "3s");
         titleSlider.style.opacity = "1";
-    }
-
-    if(currentScrollPos > 900){
-        productSlider.classList.add("animate__animated", "animate__fadeInUp");
-        productSlider.style.setProperty("--animate-duration", "3s");
-        productSlider.style.opacity = "1";
     }
 
     if(currentScrollPos > 1000){
