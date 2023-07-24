@@ -1400,8 +1400,8 @@ section.our-facts h2 {
   color: #f4ebd0;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
-  height: 15vh;
-  width: 15vw;
+  min-height: 15vh;
+  min-width: 15vw;
 }
 
 .percentage .count-digit:after {
@@ -2052,6 +2052,7 @@ responsive
   .popular .owl-nav .owl-prev{
     left: -65px;
   }
+
 }
 
 @media (max-width: 1085px) {
