@@ -1067,6 +1067,8 @@ section.who-we-are {
 
 .split-line {
   width: 40vw;
+  margin-top: -15vh;
+  margin-bottom: -15vh;
 }
 
 
@@ -1151,6 +1153,10 @@ section.who-we-are {
   color: #f4ebd0;
 }
 
+.legal-document{
+  color: rgb(18, 149, 255);
+  cursor: pointer;
+}
 
 
 /* GALLERY */
